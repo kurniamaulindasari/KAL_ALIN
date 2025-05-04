@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; KAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TRANSFORMASI LINIER &#8212; KAL</title>
   
   
   
@@ -59,9 +60,12 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'TRANSFORMASI LINEAR';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="MATRIKS" href="MATRIKS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -112,8 +116,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -167,12 +169,12 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="SISTEM%20PERSAMAAN%20LINEAR%20%28SPL%29.html">SISTEM PERSAMAAN LINEAR (SPL)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Penyelesaian%20Sistem%20Persamaan.html">Penyelesaian Sistem Persamaan Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MATRIKS.html">MATRIKS</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="TRANSFORMASI%20LINEAR.html">TRANSFORMASI LINIER</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TRANSFORMASI LINIER</a></li>
 </ul>
 
     </div>
@@ -249,7 +251,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTRANSFORMASI LINEAR.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -261,6 +263,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/TRANSFORMASI LINEAR.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -294,7 +344,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -305,11 +357,28 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>TRANSFORMASI LINIER</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-liner">DEFINISI TRANSFORMASI LINER</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-linier">Contoh Transformasi Linier</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-bidang-miring-shear">DEFINISI TRANSFORMASI BIDANG MIRING (Shear)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-rotasi-pada-bidang-miring">Transformasi Rotasi Pada Bidang Miring</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memebuktikan-transformasi-rotasi-bidang">Memebuktikan Transformasi Rotasi Bidang</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah">Langkah-langkah</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -319,13 +388,127 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="transformasi-linier">
+<h1>TRANSFORMASI LINIER<a class="headerlink" href="#transformasi-linier" title="Link to this heading">#</a></h1>
+<section id="definisi-transformasi-liner">
+<h2>DEFINISI TRANSFORMASI LINER<a class="headerlink" href="#definisi-transformasi-liner" title="Link to this heading">#</a></h2>
+<p>Transformasi linier adalah fungsi atau pemetaan dari satu ruang vektor ke ruang vektor lain (bisa ruang yang sama atau berbeda) yang mempertahankan operasi penjumlahan vektor dan perkalian skalar.</p>
+<p>Secara Formal:</p>
+<p>Jika <span class="math notranslate nohighlight">\(T: \mathbb{R}^n \rightarrow \mathbb{R}^m\)</span> adalah transformasi linier, maka untuk semua vektor <span class="math notranslate nohighlight">\(\mathbf{u}, \mathbf{v} \in \mathbb{R}^n\)</span> dan skalar <span class="math notranslate nohighlight">\(c \in \mathbb{R}\)</span>, berlaku:</p>
+<p>\begin{align*}
+T(\mathbf{u} + \mathbf{v}) &amp;= T(\mathbf{u}) + T(\mathbf{v}) \
+T(c\mathbf{u}) &amp;= c \cdot T(\mathbf{u})
+\end{align*}</p>
+<section id="contoh-transformasi-linier">
+<h3>Contoh Transformasi Linier<a class="headerlink" href="#contoh-transformasi-linier" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Rotasi (memutar vektor)</p></li>
+<li><p>Refleksi (pencerminan terhadap sumbu tertentu)</p></li>
+<li><p>Penskalaan (perbesar/perkecil ukuran vektor)</p></li>
+<li><p>Shear (geser bentuk)</p></li>
+</ul>
+</section>
+</section>
+<section id="definisi-transformasi-bidang-miring-shear">
+<h2>DEFINISI TRANSFORMASI BIDANG MIRING (Shear)<a class="headerlink" href="#definisi-transformasi-bidang-miring-shear" title="Link to this heading">#</a></h2>
+<p>Transformasi bidang miring adalah transformasi linier yang menggeser satu koordinat suatu vektor proporsional terhadap koordinat lainnya, tanpa mengubah volume (determinannya tetap 1 jika shear murni).</p>
+<section id="transformasi-rotasi-pada-bidang-miring">
+<h3>Transformasi Rotasi Pada Bidang Miring<a class="headerlink" href="#transformasi-rotasi-pada-bidang-miring" title="Link to this heading">#</a></h3>
+<p>adalah gabungan konsep rotasi dan bidang miring (shear),
+Dalam matematika, rotasi adalah transformasi yang memutar vektor terhadap titik asal, sedangkan bidang miring biasanya mengacu pada perubahan bentuk melalui shear.</p>
+</section>
+<section id="memebuktikan-transformasi-rotasi-bidang">
+<h3>Memebuktikan Transformasi Rotasi Bidang<a class="headerlink" href="#memebuktikan-transformasi-rotasi-bidang" title="Link to this heading">#</a></h3>
+<p>Kita ingin membuktikan bahwa transformasi linier <span class="math notranslate nohighlight">\(T: \mathbb{R}^2 \to \mathbb{R}^2\)</span> yang merepresentasikan rotasi berlawanan arah jarum jam sebesar sudut <span class="math notranslate nohighlight">\(\theta\)</span>, bisa dinyatakan dengan matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A =
+\begin{bmatrix}
+\cos \theta &amp; -\sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+</section>
+<section id="langkah-langkah">
+<h2>Langkah-langkah<a class="headerlink" href="#langkah-langkah" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Misalkan kita punya vektor <span class="math notranslate nohighlight">\(\mathbf{v} = (x, y)\)</span>. Kita bisa ubah ke bentuk koordinat polar:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{v} = (x, y) = (r \cos \alpha, r \sin \alpha)
+\]</div>
+<p>Di mana:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(r\)</span> adalah panjang dari vektor <span class="math notranslate nohighlight">\(\mathbf{v}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> adalah sudut antara vektor <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> dan sumbu-x positif</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Jika vektor tersebut diputar sebesar <span class="math notranslate nohighlight">\(\theta\)</span>, maka posisinya menjadi:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{v'} = (r \cos(\alpha + \theta),\ r \sin(\alpha + \theta))
+\]</div>
+<ol class="arabic simple" start="3">
+<li><p>Gunakan identitas trigonometri sudut jumlah:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\cos(\alpha + \theta) = \cos \alpha \cos \theta - \sin \alpha \sin \theta
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sin(\alpha + \theta) = \sin \alpha \cos \theta + \cos \alpha \sin \theta
+\]</div>
+<p>Maka:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{v'} = r
+\begin{bmatrix}
+\cos \alpha \cos \theta - \sin \alpha \sin \theta \\
+\sin \alpha \cos \theta + \cos \alpha \sin \theta
+\end{bmatrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="4">
+<li><p>Karena <span class="math notranslate nohighlight">\(x = r \cos \alpha\)</span> dan <span class="math notranslate nohighlight">\(y = r \sin \alpha\)</span>, maka:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{v'} =
+\begin{bmatrix}
+\cos \theta &amp; -\sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+\end{split}\]</div>
+<p>Artinya, rotasi memang dapat direpresentasikan oleh matriks di atas.</p>
+</section>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -337,12 +520,46 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="MATRIKS.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">MATRIKS</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-liner">DEFINISI TRANSFORMASI LINER</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-linier">Contoh Transformasi Linier</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-bidang-miring-shear">DEFINISI TRANSFORMASI BIDANG MIRING (Shear)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-rotasi-pada-bidang-miring">Transformasi Rotasi Pada Bidang Miring</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memebuktikan-transformasi-rotasi-bidang">Memebuktikan Transformasi Rotasi Bidang</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah">Langkah-langkah</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
